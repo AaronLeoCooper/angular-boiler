@@ -1,0 +1,15 @@
+<post-header></post-header>
+
+<section class="wrap">
+  <div class="post-top">
+    <div class="post-heading">
+      <span class="post-new-badge" ng-if="isNew">New!</span>
+      <h1>{{ post.title }}</h1>
+    </div>
+    <time class="post-datetime">{{ post.niceDatePosted }}</time>
+    <div class="post-technologies">
+      <a class="post-tech-icon" ng-repeat="tech in technologies" ng-href="/" style="background-color:{{ tech.colour }};"><span>{{ tech.name }}</span></a>
+    </div>
+  <div>
+  <article ng-bind-html="post.content"></article>
+</section>

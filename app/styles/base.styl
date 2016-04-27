@@ -1,0 +1,70 @@
+*
+	font-family $font-main
+	font-weight 400
+	box-sizing border-box
+	color $color-text
+
+b,
+strong
+	font-weight 700
+
+i,
+a,
+span
+	color inherit
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-family $font-heading
+	font-weight 300
+	margin 0
+
+.h1
+	@extend h1
+.h2
+	@extend h2
+.h3
+	@extend h3
+.h4
+	@extend h4
+.h5
+	@extend h5
+.h6
+	@extend h6
+
+
+.reset
+	margin 0
+	padding 0
+	outline 0
+	border 0
+
+html, body
+	@extend .reset
+	overflow-x hidden
+
+img
+	@extend .reset
+
+a, a:active, a:focus
+	text-decoration none
+
+a:hover
+	text-decoration underline
+
+.wrap
+	position relative
+	width 100%
+	margin 0 auto
+	padding-left 15px
+	padding-right 15px
+
+	@media tablet-up
+		width 960px
+
+.decor
+	pointer-events none

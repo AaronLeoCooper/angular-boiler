@@ -1,0 +1,150 @@
+// ======================== HEADER ========================
+
+header
+  position relative
+  height $header-height
+  box-shadow 0 2px 5px 0 rgba(0, 0, 0, .5)
+
+  @media mobile-up
+    height $header-height-d
+
+  .wrap
+    position relative
+    left 0
+    right 0
+    margin 0 auto
+    height $header-height
+    z-index 1
+
+    @media mobile-up
+      height $header-height-d
+
+  .grad-blk-fadeup
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    height 60px
+    z-index 0
+
+.header-bg
+  position absolute
+  top 0
+  left 0
+  right 0
+  background-position center center
+  background-repeat no-repeat
+  height 100%
+  z-index 0
+
+.header-heading
+  position absolute
+  z-index 1
+  bottom 0
+  left 0
+  padding 10px 15px
+  color #fff
+  font-size 20px
+  overflow hidden
+  opacity .7
+  $glow-size = 3000px
+  transition opacity .3s
+
+  &:before
+    content ''
+    position absolute
+    top 100%
+    left 50%
+    height $glow-size
+    width $glow-size
+    box-shadow 0 0 10px 5px rgba(255, 255, 255, 1)
+    opacity 0
+    border-radius $glow-size
+    transform translateX(-50%)
+    transition opacity .3s
+
+  &:hover
+    text-decoration none
+    opacity 1
+
+    &:before
+      opacity 1
+
+.header-icons
+  display block
+  position absolute
+  bottom -3px
+  right 0
+  padding 10px 15px
+  text-align right
+
+  .header-icon
+    font-size 26px
+    color #fff
+    opacity .6
+    display inline-block
+
+    &:hover
+      opacity 1
+
+
+
+.page-heading,
+.post-heading
+  position relative
+  text-align center
+  margin-top 15px
+
+  h1
+    font-size 30px
+    padding 10px 0 15px 0
+
+.post-top
+  text-align center
+
+  .post-heading
+    display inline-block
+
+.post-datetime
+  display block
+  text-align center
+  font-size 14px
+
+.post-technologies
+  position relative
+  display block
+  text-align center
+  padding 15px 0
+
+.post-tech-icon
+  position relative
+  display inline-block
+  color #fff
+  font-family $font-heading
+  width 40px
+  height 40px
+  border-radius 20px
+  font-size 12px
+  text-align center
+  margin 0 5px
+  overflow hidden
+
+  span
+    display block
+    position absolute
+    left 0
+    right 0
+    top 50%
+    transform translate(0, -50%)
+    text-align center
+    font-family inherit
+
+
+
+// ======================== FOOTER ========================
+
+.footer-copyright
+  display block
+  text-align center
+  font-size 12px
+  color #aaa

@@ -21,3 +21,6 @@ npm start
 // Build files with minification
 npm run build
 ```
+### Todo:
+
+* Re-implement build with Webpack &amp; ES6
